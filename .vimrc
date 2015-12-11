@@ -13,11 +13,11 @@ Plugin 'VundleVim/Vundle.vim'
 "The following are examples of different formats supported.
 "Keep Plugin commands between vundle#begin/end.
 "plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 "plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+"Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'Command-T'
+"Plugin 'Command-T'
 "Command git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 "The sparkup vim script is in a subdirectory of this repo called vim.
@@ -28,6 +28,10 @@ Plugin 'Command-T'
 "
 "Common plugins
 "{
+"awesome Git wrapper
+Plugin 'tpope/vim-fugitive'
+"Fast file navigation
+"Plugin 'wincent/command-t'
 "record coding time.
 Plugin 'wakatime/vim-wakatime'
 "Tab bar show outline.
@@ -87,7 +91,7 @@ set sw=4
 set ts=4
 set foldmethod=indent
 
-map  wt :Tagbar<CR>
+map wt :Tagbar<CR>
 
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
